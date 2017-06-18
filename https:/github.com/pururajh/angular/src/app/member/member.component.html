@@ -1,0 +1,27 @@
+<p>
+  member works!
+  
+  {{comment}}
+</p>
+{{memberObj.name}}
+
+<br>
+<ul>
+  <li *ngFor="let i of array"> {{i}} </li>
+</ul>
+
+<p *ngIf="flag">This is true</p>
+
+<p *ngIf="flag then template1 else template2">This is Template selection</p>
+
+<ng-template #template1>Please have the details from template1</ng-template>
+
+<ng-template #template2>Please have the details from template2</ng-template>
+
+<br>
+<br>
+<p> Member's address :{{getMemberPostalAddress()}}</p>
+
+
+
+
