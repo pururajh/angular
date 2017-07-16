@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { PostalAddressService } from './postal-address.service';
@@ -15,6 +16,7 @@ import { MemberComponent } from './member/member.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     RouterModule.forRoot ([
     {
       path: 'member',
