@@ -9,6 +9,7 @@ import { PostalAddressService } from './../postal-address.service';
 export class MemberComponent implements OnInit {
   comment = 'Starting Member page';
   flag = true;
+  day = new Date();
   memberObj = {
     id:'1',
     name:'Pururaj',

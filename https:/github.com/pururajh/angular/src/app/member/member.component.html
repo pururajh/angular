@@ -1,14 +1,21 @@
 <p>
   member works!
   
-  {{comment}}
+  {{comment | uppercase}}
 </p>
-{{memberObj.name}}
-
+{{memberObj.name | lowercase}}
+<br>
+today's date {{day}} - with timestamp
+<br>
+today's date {{day | date}} - without timestamp
 <br>
 <ul>
   <li *ngFor="let i of array"> {{i}} </li>
 </ul>
+<br>
+Sort Ascending : {{array | sort: 'asc'}}
+<br>
+Sort Descending : {{array | sort: 'desc'}}
 
 <p *ngIf="flag">This is true</p>
 

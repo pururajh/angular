@@ -1,15 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule, ControlContainer } from '@angular/forms';
 
+import { SortPipe } from './sort.array';
 import { AppComponent } from './app.component';
 import { PostalAddressService } from './postal-address.service';
 import { ProductComponent } from './product/product.component';
 import { MemberComponent } from './member/member.component';
 
+
 @NgModule({
   declarations: [
+    SortPipe,
     AppComponent,
     ProductComponent,
     MemberComponent
@@ -17,6 +20,7 @@ import { MemberComponent } from './member/member.component';
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot ([
     {
       path: 'member',
